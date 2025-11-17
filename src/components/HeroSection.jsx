@@ -49,15 +49,16 @@ export const HeroSection = () => {
       id="hero"
       className="relative min-h-screen flex flex-col items-center px-4 overflow-hidden pt-20"
     >
-      {/* Animated background elements */}
-      <div className="absolute top-20 right-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-float -z-10"></div>
-      <div className="absolute bottom-20 left-10 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse-subtle -z-10"></div>
-      <div className="absolute top-1/2 right-1/3 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl -z-10"></div>
+      {/* Premium animated background elements */}
+      <div className="absolute top-20 right-10 w-96 h-96 bg-primary/15 rounded-full blur-3xl animate-float -z-10"></div>
+      <div className="absolute bottom-20 left-10 w-96 h-96 bg-purple-500/15 rounded-full blur-3xl animate-pulse-subtle -z-10"></div>
+      <div className="absolute top-1/2 right-1/4 w-72 h-72 bg-cyan-500/10 rounded-full blur-3xl -z-10 animate-float" style={{ animationDelay: "2s" }}></div>
+      <div className="absolute bottom-1/3 right-10 w-64 h-64 bg-orange-500/10 rounded-full blur-3xl -z-10 animate-pulse-subtle" style={{ animationDelay: "1s" }}></div>
 
       {/* Gradient line decoration */}
-      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1/2 h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-50"></div>
+      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent opacity-50"></div>
 
-      <div className="container max-w-5xl mx-auto text-center z-10 flex-grow flex flex-col justify-center">
+      <div className="container max-w-6xl mx-auto text-center z-10 flex-grow flex flex-col justify-center">
         <div className="space-y-8">
           {/* Badge */}
           {/* <div className="flex justify-center opacity-0 animate-fade-in">

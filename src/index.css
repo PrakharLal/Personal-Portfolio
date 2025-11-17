@@ -18,6 +18,7 @@
   --animate-fade-in-delay-2: fade-in 0.7s ease-out 0.4s forwards;
   --animate-fade-in-delay-3: fade-in 0.7s ease-out 0.6s forwards;
   --animate-fade-in-delay-4: fade-in 0.7s ease-out 0.8s forwards;
+  --animate-fade-in-delay-5: fade-in 0.7s ease-out 1s forwards;
   --animate-meteor: meteor 5s linear infinite;
 
   @keyframes float {
@@ -142,6 +143,10 @@
   text-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
 }
 
+@utility text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-purple-800 via-purple-600 to-purple-400;
+}
+
 @utility card-hover {
   @apply transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg;
 }
@@ -154,9 +159,9 @@
 }
 
 @utility cosmic-button {
-  @apply px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium 
-         transition-all duration-300 hover:shadow-[0_0_10px_rgba(139,92,246,0.5)]
-         hover:scale-105 active:scale-95;
+  @apply px-8 py-3 rounded-full bg-gradient-to-r from-purple-800 to-purple-600 text-white font-semibold 
+         transition-all duration-300 hover:shadow-[0_0_20px_rgba(139,92,246,0.6)]
+         hover:scale-110 active:scale-95 border border-purple-500/50;
 }
 
 @utility star {

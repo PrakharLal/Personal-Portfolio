@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ChevronDown } from "lucide-react";
 import { StarBackground } from "./StarBackground";
 import { GradientOrbsBackground } from "./backgrounds/GradientOrbsBackground";
@@ -33,8 +33,21 @@ const BACKGROUND_OPTIONS = [
 ];
 
 export const BackgroundSelector = () => {
-  const [selectedBackground, setSelectedBackground] = useState("advanced-neural");
+  const [selectedBackground, setSelectedBackground] = useState("neural-network");
   const [isOpen, setIsOpen] = useState(false);
+
+  // Auto-switching backgrounds
+  const autoSwitchBackgrounds = ["neural-network", "advanced-neural", "quantum-network"];
+
+  useEffect(() => {
+    let currentIndex = 0;
+    const interval = setInterval(() => {
+      currentIndex = (currentIndex + 1) % autoSwitchBackgrounds.length;
+      setSelectedBackground(autoSwitchBackgrounds[currentIndex]);
+    }, 7000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   const currentBackground = BACKGROUND_OPTIONS.find(
     (bg) => bg.id === selectedBackground
@@ -63,6 +76,9 @@ export const BackgroundSelector = () => {
           {/* Dropdown Menu */}
           {isOpen && (
             <div className="absolute top-full right-0 mt-2 w-56 max-h-96 overflow-y-auto bg-background/80 backdrop-blur-md border border-primary/20 rounded-lg shadow-lg">
+              <div className="sticky top-0 px-4 py-2 bg-background/90 border-b border-primary/20 text-xs text-muted-foreground">
+                Select Background (Auto-switching enabled)
+              </div>
               {BACKGROUND_OPTIONS.map((option) => (
                 <button
                   key={option.id}
