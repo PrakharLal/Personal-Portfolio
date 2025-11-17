@@ -17,18 +17,18 @@ const projects = [
       "A habit-tracking app that helps users build and maintain positive habits through gamification.",
     image: "/projects/project2.png",
     tags: ["TypeScript", "Firebase", "Next.js"],
-    demoUrl: "",
+    demoUrl: "https://habit-karma-score.vercel.app",
     githubUrl: "https://github.com/PrakharLal/habit-karma-score",
   },
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: "FasalGPT",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
+      "An AI based crop health and disease prediction platform for farmers",
     image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
-    demoUrl: "#",
-    githubUrl: "#",
+    tags: ["React", "Node.js", "MongoDB"],
+    demoUrl: "https://github.com/PrakharLal/FasalGPT",
+    githubUrl: "https://github.com/PrakharLal/FasalGPT",
   },
 ];
 

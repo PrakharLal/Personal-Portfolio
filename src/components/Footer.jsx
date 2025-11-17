@@ -28,10 +28,10 @@ export const Footer = () => {
           <div className="space-y-4">
             <h4 className="font-semibold">Follow Me</h4>
             <div className="flex space-x-3">
-              <a href="#" className="p-3 rounded-lg bg-primary/10 hover:bg-primary/20 text-primary transition-all duration-300 hover:scale-110">
+              <a href="https://github.com/PrakharLal" className="p-3 rounded-lg bg-primary/10 hover:bg-primary/20 text-primary transition-all duration-300 hover:scale-110">
                 <Github size={20} />
               </a>
-              <a href="#" className="p-3 rounded-lg bg-primary/10 hover:bg-primary/20 text-primary transition-all duration-300 hover:scale-110">
+              <a href="https://www.linkedin.com/in/prakhar-lal-developer/" className="p-3 rounded-lg bg-primary/10 hover:bg-primary/20 text-primary transition-all duration-300 hover:scale-110">
                 <Linkedin size={20} />
               </a>
               <a href="#" className="p-3 rounded-lg bg-primary/10 hover:bg-primary/20 text-primary transition-all duration-300 hover:scale-110">

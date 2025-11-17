@@ -27,7 +27,7 @@ export const AboutSection = () => {
                 <span className="text-gradient">Passionate Developer</span> & Creative Problem Solver
               </h3>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                With over 5 years of experience in web development, I specialize
+                With over 2 years of experience in web development, I specialize
                 in creating responsive, accessible, and performant web
                 applications using modern technologies and best practices.
               </p>
@@ -53,6 +53,10 @@ export const AboutSection = () => {
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-2 h-2 rounded-full bg-primary"></div>
+                <span className="text-muted-foreground">Data Scientist</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-2 h-2 rounded-full bg-primary"></div>
                 <span className="text-muted-foreground">Performance Optimization</span>
               </div>
               <div className="flex items-center gap-3">
@@ -66,7 +70,7 @@ export const AboutSection = () => {
                 Get In Touch
               </a>
               <a
-                href=""
+                href="https://drive.usercontent.google.com/download?id=15k7yH0Be2MOUATc-1qF0Xye16GB58GPw&export=download&authuser=0&confirm=t&uuid=a72a1c09-f660-4f03-b35e-7313ff21a330&at=ALWLOp4av8iKDXaE1AnS3KDvYzmh:1763401390560"
                 className="px-6 py-3 rounded-full border border-primary/50 text-primary hover:bg-primary/10 hover:border-primary transition-all duration-300 font-medium backdrop-blur-sm"
               >
                 Download CV
@@ -88,6 +92,19 @@ export const AboutSection = () => {
                 <div className="flex items-start gap-4">
                   <div className="p-3 rounded-lg bg-gradient-to-br from-primary/20 to-cyan-500/20">
                     <Code className="h-6 w-6 text-primary" />
+                  </div>
+                  <div className="text-left">
+                    <h4 className="font-semibold text-lg">Data Scientist</h4>
+                    <p className="text-sm text-muted-foreground">
+                      Python, Scikit Learn, Flask, Machine learning, GenAI
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="animated-gradient-border p-5 card-hover">
+                <div className="flex items-start gap-4">
+                  <div className="p-3 rounded-lg bg-gradient-to-br from-cyan-500/20 to-blue-500/20">
+                    <User className="h-6 w-6 text-cyan-500" />
                   </div>
                   <div className="text-left">
                     <h4 className="font-semibold text-lg">Web Development</h4>

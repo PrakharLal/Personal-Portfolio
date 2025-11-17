@@ -53,7 +53,7 @@ export const Navbar = () => {
           <span className="w-8 h-8 rounded-full bg-gradient-to-br from-purple-800 to-purple-600 flex items-center justify-center">
             <span className="text-white text-sm font-bold">P</span>
           </span>
-          <span className="hidden sm:inline">Prakhar</span>
+          <span className="hidden sm:inline">Prakhar's Portfolio</span>
         </a>
 
         {/* desktop nav */}

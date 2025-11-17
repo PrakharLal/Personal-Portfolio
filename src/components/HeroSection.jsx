@@ -119,11 +119,11 @@ export const HeroSection = () => {
           {/* Stats or highlights */}
           <div className="grid grid-cols-3 gap-8 pt-12 animate-fade-in-delay-5">
             <div className="space-y-2">
-              <p className="text-2xl md:text-3xl font-bold text-purple-800">5+</p>
+              <p className="text-2xl md:text-3xl font-bold text-purple-800">2+</p>
               <p className="text-sm text-muted-foreground">Years Experience</p>
             </div>
             <div className="space-y-2">
-              <p className="text-2xl md:text-3xl font-bold text-purple-800">50+</p>
+              <p className="text-2xl md:text-3xl font-bold text-purple-800">10+</p>
               <p className="text-sm text-muted-foreground">Projects Done</p>
             </div>
             <div className="space-y-2">

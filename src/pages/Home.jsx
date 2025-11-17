@@ -8,6 +8,7 @@ import { ProjectsSection } from "../components/ProjectsSection";
 import { ContactSection } from "../components/ContactSection";
 import { Footer } from "../components/Footer";
 import { Chatbot } from "../components/Chatbot";
+import { AnalyticsDashboard } from "../components/AnalyticsDashboard";
 
 export const Home = () => {
   return (
@@ -19,6 +20,9 @@ export const Home = () => {
 
       {/* Chatbot Assistant */}
       <Chatbot />
+
+      {/* Analytics Dashboard */}
+      <AnalyticsDashboard />
 
       {/* Navbar */}
       <Navbar />
